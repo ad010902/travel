@@ -31,10 +31,10 @@
 
         <nav class="navbar">
             <a href="#home">home</a>
-            <a href="#book">book</a>
-            <a href="#packages">packages</a>
+            <a href="#book">Live in</a>
+            <a href="#packages">Must-see sites</a>
             <a href="#services">services</a>
-            <a href="#gallery">gallery</a>
+            <a href="#gallery">cultures</a>
             <a href="#review">review</a>
             <a href="#contact">contact</a>
         </nav>
@@ -166,14 +166,9 @@
             }
             
             .button1 {
-                background-color: white;
-                color: black;
-                border: 2px solid crimson;
-            }
-            
-            .button1:hover {
                 background-color: crimson;
-                color: white;
+                color: black;
+                border: 2px solid white;
             }
             
             .button2 {
@@ -210,13 +205,91 @@
             }
         </style>
 
-        <center><button class="button button2">All</button>
-            <button class="button button2">Explore</button>
-            <button class="button button3">Relax</button>
-            <button class="button button4">Play</button>
+        <center><button class="button button1">All</button>
+            <a href="https://vietnam.travel/things-to-do/beaches"><button class="button button2">Beaches</button></a>
+            <a href="https://vietnam.travel/things-to-do/adventure"><button class="button button3">Adventure</button></a>
+            <a href="https://vietnam.travel/things-to-do/luxury"><button class="button button4">luxury</button></a>
         </center>
         <br>
-        
+
+        <style>
+            .box-container {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 3.5rem;
+            }
+            
+            .box-container .box {
+                overflow: hidden;
+                box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+                border: 1rem solid #fff;
+                border-radius: .5rem;
+                flex: 1 1 30rem;
+                height: 25rem;
+                position: relative;
+            }
+            
+            .box-container .box img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+            
+            .box-container .box .content {
+                position: absolute;
+                top: -100%;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                text-align: center;
+                background: rgba(0, 0, 0, .7);
+                padding: 2rem;
+                padding-top: 5rem;
+            }
+            
+            .box-container .box:hover .content {
+                top: 0;
+            }
+            
+            .box-container .box .content h3 {
+                font-size: 2.5rem;
+                color: var(--orange);
+            }
+            
+            .box-container .box .content p {
+                font-size: 1.5rem;
+                color: #eee;
+                padding: .5rem 0;
+            }
+        </style>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/hồ gươm.png" alt="">
+                <td valign="central">
+                    <p><b><font color="#ffffff">Ha Noi</font></b></p>
+                </td>
+                <div class="content">
+                    <h3>Northern</h3>
+                    <a href="https://vietnam.travel/places-to-go/northern-vietnam" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/đà nẵng.jpg" alt="">
+                <div class="content">
+                    <h3>central</h3>
+                    <a href="https://vietnam.travel/places-to-go/central-vietnam" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/HCM.jpg" alt="">
+                <div class="content">
+                    <h3>southern</h3>
+                    <a href="https://vietnam.travel/places-to-go/southern-vietnam" class="btn">see more</a>
+                </div>
+            </div>
+
 
     </section>
     <!-- book section ends -->
@@ -255,32 +328,32 @@
         <div class="box-container">
 
             <div class="box">
-                <img src="images/p-1.jpg" alt="">
+                <a href="https://vietnam.travel/sites/default/files/360Tour/VietNam/index.htm"><img src="images/p-1.jpg" alt=""></a>
 
             </div>
 
             <div class="box">
-                <img src="images/p-2.jpg" alt="">
+                <a href="https://vietnam.travel/sites/default/files/360Tour/HaLong/index.htm"><img src="images/p-2.jpg" alt=""></a>
 
             </div>
 
             <div class="box">
-                <img src="images/p-3.jpg" alt="">
+                <a href="https://vietnam.travel/sites/default/files/360Tour/HoiAn/index.htm"><img src="images/p-3.jpg" alt=""></a>
 
             </div>
 
             <div class="box">
-                <img src="images/p-4.jpg" alt="">
+                <a href="https://vietnam.travel/sites/default/files/360Tour/NhaTrang2021/index.htm"><img src="images/p-4.jpg" alt=""></a>
 
             </div>
 
             <div class="box">
-                <img src="images/p-5.jpg" alt="">
+                <a href="https://vietnam.travel/sites/default/files/360Tour/DaNang/index.htm"><img src="images/p-5.jpg" alt=""></a>
 
             </div>
 
             <div class="box">
-                <img src="images/p-6.jpg" alt="">
+                <a href="https://vietnam.travel/sites/default/files/360Tour/MySon/index.htm"><img src="images/p-6.jpg" alt=""></a>
             </div>
 
         </div>
@@ -288,52 +361,6 @@
     </section>
 
     <!-- packages section ends -->
-    <section class="home-top-banner-slider">
-        <div class="swiper home-top-slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="wrap-thumb">
-                        <a rel="noopener noreferrer" href="/places-to-go/northern-vietnam/ha-long">
-                            <img src="https://vietnam.travel/sites/default/files/styles/top_banner/public/2021-12/211011%20Resize%20KV%20halong-01-min_0.jpg?itok=y-1SqCq0" class="thumb thumb-custom">
-                            <h2 class="title text-center en"></h2>
-                        </a>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="wrap-thumb">
-                        <a rel="noopener noreferrer" href="/places-to-go/central-vietnam/nha-trang">
-                            <img src="https://vietnam.travel/sites/default/files/styles/top_banner/public/2021-12/211011%20Resize%20KV%20nhatrang-01-min_1.jpg?itok=pSGQVMXz" class="thumb thumb-custom">
-                            <h2 class="title text-center en"></h2>
-                        </a>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="wrap-thumb">
-                        <a rel="noopener noreferrer" href="/places-to-go/southern-vietnam/phu-quoc">
-                            <img src="https://vietnam.travel/sites/default/files/styles/top_banner/public/2021-12/211011%20Resize%20KV%20ninhvanbay-01-min_2.jpg?itok=IjX_hohv" class="thumb thumb-custom">
-                            <h2 class="title text-center en"></h2>
-                        </a>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="wrap-thumb">
-                        <a rel="noopener noreferrer" href="/places-to-go/central-vietnam/da-nang">
-                            <img src="https://vietnam.travel/sites/default/files/styles/top_banner/public/2021-12/211011%20Resize%20KV%20danang-01-min_2.jpg?itok=24aEguFC" class="thumb thumb-custom">
-                            <h2 class="title text-center en"></h2>
-                        </a>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="wrap-thumb">
-                        <a rel="noopener noreferrer" href="/places-to-go/central-vietnam/hoi-an">
-                            <img src="https://vietnam.travel/sites/default/files/styles/top_banner/public/2021-12/211011%20Resize%20KV%20hoian-01-min_2.jpg?itok=B0MFbdAS" class="thumb thumb-custom">
-                            <h2 class="title text-center en"></h2>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- services section starts  -->
 
     <section class="services" id="services">
@@ -352,33 +379,33 @@
         <div class="box-container">
 
             <div class="box">
-                <i class="fas fa-hotel"></i>
+                <a href="https://www.hotels-in-vietnam.com/"><i class="fas fa-hotel"></i></a>
                 <h3>affordable hotels</h3>
                 <p>We have lots of affordable hotels for you all over the world!! So what are you waiting for, Just Enjoy Your Life WITHOUT SPENDING MUCH.</p>
             </div>
             <div class="box">
-                <i class="fas fa-utensils"></i>
+                <a href="https://vietnam.travel/things-to-do/food"><i class="fas fa-utensils"></i></a>
                 <h3>food and drinks</h3>
                 <p>You will get all kinds of food and drinks like Mexican, Indian, Chinese, Italian... at very reasonable prices.</p>
             </div>
             <div class="box">
-                <i class="fas fa-bullhorn"></i>
+                <a href="https://vietnam.travel/plan-your-trip/health-safety"><i class="fas fa-bullhorn"></i></a>
                 <h3>safty guide</h3>
                 <p>Travelling with us has never been safer. We always ensure our customers are secure and practice caution and safeguarding measures when travelling.</p>
             </div>
             <div class="box">
-                <i class="fas fa-globe-asia"></i>
-                <h3>around the world</h3>
+                <a href="https://vietnam.travel/things-to-do/weather-and-climate-vietnam"><i class="fas fa-globe-asia"></i></a>
+                <h3>weather</h3>
                 <p>When it comes to destinations, the only limit is your imagination as we have expanded our services to being able to fly customers anywhere they want in the world.</p>
             </div>
             <div class="box">
-                <i class="fas fa-plane"></i>
-                <h3>fastest travel</h3>
+                <a href="https://vietnam.travel/plan-your-trip/transport-within-vietnam"><i class="fas fa-plane"></i></a>
+                <h3>transport</h3>
                 <p>Long, tedious flights not your thing? No worries! Some of the fastest flights we have can take you to a luxury, serene location in just one hour!</p>
             </div>
             <div class="box">
-                <i class="fas fa-hiking"></i>
-                <h3>adventures</h3>
+                <a href="https://vietnam.travel/things-to-do/vietnamese-history-primer"><i class="fas fa-flag"></i></a>
+                <h3>history</h3>
                 <p>Life is too short to not take the opportunity of having an adventure when it comes along and we can guarantee you will never regret your decision.</p>
             </div>
 
@@ -393,13 +420,15 @@
     <section class="gallery" id="gallery">
 
         <h1 class="heading">
-            <span>g</span>
-            <span>a</span>
+            <span>c</span>
+            <span>u</span>
             <span>l</span>
-            <span>l</span>
-            <span>e</span>
+            <span>t</span>
+            <span>u</span>
             <span>r</span>
-            <span>y</span>
+            <span>e</span>
+            <span>s</span>
+
         </h1>
 
         <div class="box-container">
@@ -407,73 +436,25 @@
             <div class="box">
                 <img src="images/g-1.jpg" alt="">
                 <div class="content">
-                    <h3>amazing places</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
-                    <a href="#" class="btn">see more</a>
+                    <h3>fun at home</h3>
+                    <p>Take a 360-degree tour, practice your Vietnamese phrases,light some incense, create palm leaf animals or tune into classic Vietnamese tunes</p>
+                    <a href="https://vietnam.travel/things-to-do/visit-vietnam-from-home" class="btn">see more</a>
                 </div>
             </div>
             <div class="box">
                 <img src="images/g-2.jpg" alt="">
                 <div class="content">
-                    <h3>amazing places</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
-                    <a href="#" class="btn">see more</a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/g-3.jpg" alt="">
-                <div class="content">
-                    <h3>amazing places</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
-                    <a href="#" class="btn">see more</a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/g-4.jpg" alt="">
-                <div class="content">
-                    <h3>amazing places</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
-                    <a href="#" class="btn">see more</a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/g-5.jpg" alt="">
-                <div class="content">
-                    <h3>amazing places</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
-                    <a href="#" class="btn">see more</a>
+                    <h3>book, art and music</h3>
+                    <p>Discover Vietnamese books, music,..</p>
+                    <a href="https://vietnam.travel/things-to-do/best-books-music-art-vietnam" class="btn">see more</a>
                 </div>
             </div>
             <div class="box">
                 <img src="images/g-6.jpg" alt="">
                 <div class="content">
-                    <h3>amazing places</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
-                    <a href="#" class="btn">see more</a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/g-7.jpg" alt="">
-                <div class="content">
-                    <h3>amazing places</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
-                    <a href="#" class="btn">see more</a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/g-8.jpg" alt="">
-                <div class="content">
-                    <h3>amazing places</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
-                    <a href="#" class="btn">see more</a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/g-9.jpg" alt="">
-                <div class="content">
-                    <h3>amazing places</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
-                    <a href="#" class="btn">see more</a>
+                    <h3>inspring stories</h3>
+                    <p>kindness and community spirit in covid-19</p>
+                    <a href="https://vietnam.travel/things-to-do/vietnam-covid-inspiring-stories" class="btn">see more</a>
                 </div>
             </div>
 
@@ -504,7 +485,8 @@
                     <div class="box">
                         <img src="images/pic1.png" alt="">
                         <h3>Linda</h3>
-                        <p>Hoi An is a beautiful ancient town in Central Vietnam that is an unmissable stop on any trip to Vietnam. I loved it so much I didn’t want to leave, and it’s definitely on my list of favourite destinations ever😍
+                        <p>Autumn is the most beautiful time of year to many people living in Hanoi. Autumn starts around late September and lasts until the end of November. During this season, the weather is cool, dry, and breezy. Travellers can chill around
+                            picturesque lakes, enjoy street food, or ramble through restless night markets without breaking a sweat. 😍
                         </p>
                         <div class="stars">
                             <i class="fas fa-star"></i>
@@ -518,8 +500,9 @@
                 <div class="swiper-slide">
                     <div class="box">
                         <img src="images/pic2.png" alt="">
-                        <h3>john deo</h3>
-                        <p>English below 🤨I thought elephants only live on land, who would have thought of Phu Quoc to see sea elephants. Do you know where this is Phu Quoc?
+                        <h3>wang yi bo</h3>
+                        <p>Bánh ướt Kim Long is a kind of fresh spring rolls made of charcoal-grilled pork and basil leaves wrapped in fresh rice paper. Its charm lies not only in the rolls themselves but also in its sauce, which I have never successfully
+                            replicated. It's a beautiful and healthy dish for summer.
                         </p>
                         <div class="stars">
                             <i class="fas fa-star"></i>
@@ -533,8 +516,8 @@
                 <div class="swiper-slide">
                     <div class="box">
                         <img src="images/pic3.png" alt="">
-                        <h3>john deo</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias consectetur ducimus beatae, reprehenderit exercitationem!
+                        <h3>willam steven</h3>
+                        <p>Don’t miss the Cave Festival in Phong Nha that happens yearly. The locals are proud of this cave land so much and we hope the Cave Festival can attract more visitors to come and explore.
                         </p>
                         <div class="stars">
                             <i class="fas fa-star"></i>
@@ -548,8 +531,9 @@
                 <div class="swiper-slide">
                     <div class="box">
                         <img src="images/pic4.png" alt="">
-                        <h3>john deo</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias consectetur ducimus beatae, reprehenderit exercitationem!
+                        <h3>daisy</h3>
+                        <p>If you ask me, Đà Lạt is the most beautiful in December, when you can feel the lingering cold of winter just before the warmth of spring. It's an iconic picture: people in sweaters and gloves on walks around Xuân Hương Lake, with
+                            cherry apricots in full bloom.
                         </p>
                         <div class="stars">
                             <i class="fas fa-star"></i>
@@ -591,15 +575,16 @@
 
             <form action="">
                 <div class="inputBox">
-                    <input type="text" placeholder="name">
-                    <input type="email" placeholder="email">
+                    <input type="text" placeholder="Name" name="nameContact">
+                    <input class="emailSend" type="email" placeholder="Email" name="emailContact">
                 </div>
                 <div class="inputBox">
-                    <input type="number" placeholder="number">
-                    <input type="text" placeholder="subject">
+                    <input type="number" placeholder="Number">
+                    <input type="text" placeholder="Subject" name="subjectContact">
                 </div>
-                <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
-                <input type="submit" class="btn" value="send message">
+                <textarea placeholder="Message" class="messageContact" name="" id="" cols="30" rows="10"></textarea>
+                <input type="submit" class="btn" value="send message" onclick="sendEmail()" />
+            </form>
             </form>
 
         </div>
@@ -627,63 +612,18 @@
     <!-- footer section  -->
 
     <section class="footer">
-
-        <div class="box-container">
-
-            <div class="box">
-                <h3>about us</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quas magni pariatur est accusantium voluptas enim nemo facilis sit debitis.</p>
-            </div>
-            <div class="box">
-                <h3>branch locations</h3>
-                <a href="#">india</a>
-                <a href="#">USA</a>
-                <a href="#">japan</a>
-                <a href="#">france</a>
-            </div>
-            <div class="box">
-                <h3>quick links</h3>
-                <a href="#">home</a>
-                <a href="#">book</a>
-                <a href="#">packages</a>
-                <a href="#">services</a>
-                <a href="#">gallery</a>
-                <a href="#">review</a>
-                <a href="#">contact</a>
-            </div>
-            <div class="box">
-                <h3>follow us</h3>
-                <a href="#">facebook</a>
-                <a href="#">instagram</a>
-                <a href="#">twitter</a>
-                <a href="#">linkedin</a>
-            </div>
-
-        </div>
-
-        <h1 class="credit"> created by <span> mr. web designer </span> | all rights reserved! </h1>
+        <font color="white">
+            <font size="+1"> Contact us: </font>
+        </font>
+        <br>
+        <h1 class="credit"> facebook <span> instagram </span> </h1>
 
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!-- custom js file link  -->
     <script src="script.js"></script>
+    <script src="contact.js"></script>
 
 </body>
 
